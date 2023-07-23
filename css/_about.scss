@@ -1,0 +1,63 @@
+@use 'global'as*;
+
+#page-header.about-header {
+    background-image: url(../images/about/banner.png);
+}
+
+#about {
+    display: flex;
+    align-items: center;
+
+
+    img {
+        width: 50%;
+        height: auto;
+    }
+
+    div {
+        padding-left: 40px;
+    }
+}
+
+#app {
+    text-align: center;
+
+    a {
+        color: $main-color;
+        text-decoration: underline;
+    }
+
+    .video {
+        width: 70%;
+        height: 100%;
+        margin: 30px auto 0;
+
+        video {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media (max-width:477px) {
+    #about {
+        flex-direction: column;
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        div {
+            text-align: center;
+            padding-left: 0px;
+        }
+    }
+
+    #app {
+        .video {
+            width: 100%;
+        }
+    }
+}
